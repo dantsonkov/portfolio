@@ -3,12 +3,12 @@ html {
 }
 
 body {
-  background-color: #fbfbfd;
+  background-color: #ffffff;
   margin: 0px;
 }
 
 h1 {
-  color: #004fe0;
+  color: #f98560;
   font-family: "Merriweather", serif;
   font-weight: 700;
   font-size: 48px;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  color: #353638;
+  color: #383e41;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 500;
   font-size: 40px;
@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-  color: #353638;
+  color: #383e41;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -34,7 +34,7 @@ h3 {
 }
 
 h4 {
-  color: #004fe0;
+  color: #f98560;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -42,14 +42,14 @@ h4 {
 }
 
 li {
-  color: #353638;
+  color: #383e41;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
 
 p {
-  color: #353638;
+  color: #383e41;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -77,6 +77,10 @@ p {
   text-decoration: none;
 }
 
+a.link-payhawk, .link-trading212{
+  color: #747980;
+}
+
 a.link-payhawk:visited {
   color: #747980;
 }
@@ -94,8 +98,8 @@ a.link-trading212:hover {
 }
 
 .list-item {
-  background-color: #f3f4f7;
-  background-image: linear-gradient(135deg, #f3f4f7 0%, #e6e6e9 74%);
+  background-color: #fbf7f1;
+  background-image: linear-gradient(135deg, #fbf7f1 0%, #fcf5ec 74%);
   height: 50vw;
   max-height: 400px;
   margin-bottom: 60px;
@@ -119,9 +123,10 @@ a.link-trading212:hover {
   text-decoration: none;
   padding-left: 32px;
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  color: #383e41;
 }
 
 .footer-p {
@@ -137,7 +142,7 @@ a.link-trading212:hover {
 }
 
 .nav-links:hover {
-  color: #004fe0;
+  color: #f98560;
 }
 
 .nav-logo {
@@ -151,7 +156,7 @@ a.link-trading212:hover {
 }
 
 a.nav-logo:visited {
-  color: #353638;
+  color: #383e41;
 }
 
 .work-description {
@@ -167,7 +172,7 @@ a.nav-logo:visited {
 }
 
 .button {
-  background-color: #004fe0;
+  background-color: #f98560;
   padding: 12px 20px 12px 20px;
   height: 48px;
   font-family: "IBM Plex Sans", sans-serif;
@@ -175,12 +180,12 @@ a.nav-logo:visited {
   font-weight: 500;
   line-height: 20px;
   border-radius: 8px;
-  color: #ffffff;
+  color: #383e41;
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: #1d6cff;
+  background-color: #fa784c;
 }
 
 .buttons-works {
@@ -197,16 +202,16 @@ a.nav-logo:visited {
   font-weight: 500;
   line-height: 20px;
   border-radius: 8px;
-  color: #353638;
+  color: #383e41;
   text-decoration: none;
 }
 
 .button-secondary:hover {
-  color: #004fe0;
+  color: #f98560;
 }
 
 .button-disabled {
-  background-color: #004fe0;
+  background-color: #f98560;
   padding: 12px 20px 12px 20px;
   height: 48px;
   font-family: "IBM Plex Sans", sans-serif;
@@ -214,7 +219,7 @@ a.nav-logo:visited {
   font-weight: 500;
   line-height: 20px;
   border-radius: 8px;
-  color: #ffffff;
+  color: #383e41;
   text-decoration: none;
   opacity: 0.5;
   cursor: not-allowed;
@@ -242,5 +247,5 @@ a.nav-logo:visited {
 }
 
 .mailto-message:hover {
-  color: #004fe0;
+  color: #f98560;
 }
