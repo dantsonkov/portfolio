@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal portfolio of Daniel Tsonkov" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daniel Tsonkov" />
+    <title>Daniel Tsonkov | Product designer</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+</head>
+
+<body>
+    <div class="nav-items">
+        <a href="/" class="nav-logo">Dan Tsonkov</a>
+        <a href="index.html#works" class="nav-links">Selected works</a>
+        <a href="about.html" class="nav-links" rel="noopener" rel="noreferrer">About</a>
+    </div>
+    <div class="intro-invest">
+    </div>
+    <div class="container">
+        <a href="index.html#works" class="button-back">Back to home</a>
+        <h3>Trading212 - Invest platform</h3>
+        <h4>Introduction</h4>
+        <p>The assignment was about building a new platform interface solely targeted at users wanting to invest long
+            term. From manual investing to creating long term auto-investment plans, e.g. Retirement, Large purchases,
+            Home improvements etc. Therefore the interface vastly differs/should branch out from the current
+            CFD<a class="resume" href="https://en.wikipedia.org/wiki/Contract_for_difference">(Contract for
+                difference)</a>-focused platform UI. The task is very complex and pivotal for the company’s
+            future business targets/needs.</p>
+        <figure class="figure">
+            <img class="images" src="images/cfd-platform.png" alt="Image of the CFD platform">
+            <figcaption class="fig-caption">Screenshot of the CFD focused interface</figcaption>
+        </figure>
+        <p>The best thing about working on this project was the scale, variety of challenges and problems to solve: from
+            UI iterations to crafting a long term, sustainable product. Also our team decided to start from scratch, so
+            there is little to none legacy limitations be it design/code base wise.
+        </p>
+        <p class="note-strong">In this case study I will only be focusing on the 6 main tabs/pages, as I think that they
+            show
+            enough of the complexity and scale of the project, without being overbearing to the reader. 🙌</p>
+        <h4>Goals & challenges</h4>
+        <ul>
+            <li>Define a clear main structure of the platform and its most impactful sections/tabs</li>
+            <li>Salvage components that can be reused with no regards to the primary state of the trading platform, so
+                that we can ship a useful, viable product in the shortest time possible.</li>
+            <li>Create a clear & non-deceptive experience for users with a long term focus</li>
+            <li>Limelight hundreds of educational videos made by us to help our users</li>
+        </ul>
+        <h4>User Research Results</h4>
+        <ul>
+            <li>Users don’t tend to make sudden/rapid investments, but more planned and prefer thorough research before
+                committing to a specific portfolio/instrument.</li>
+            <li>Users find the CFD interface highly cluttered and busy for the purpose of investing</li>
+            <li>Many of our features are hard to find, and there is a steep learning curve with the UI</li>
+            <li>Dialogs from the CFD focused platform are clear and concise enough so that they can live in the new UI
+                and can be reused, cutting down implementation times.</li>
+        </ul>
+        <h4>1. Home</h4>
+        <p>My main idea was keeping the UI as similar as possible to the old one since I didn’t want to introduce new
+            complex mental models to the users. With that in mind, the platform needed a long-overdue visual update, so
+            many of the components in our design system underwent a style refresh in line with our new brand guidelines,
+            and respectively their new purpose.</p>
+        <p class="note-strong">After discussing it with our head of design we concluded, that in our case a tabular like
+            navigation is the most suitable.</p>
+        <figure class="figure">
+            <img class="images" src="images/standard-view.png" alt="Default view of the home screen">
+            <figcaption class="fig-caption">Default view of the home screen</figcaption>
+        </figure>
+        <p>I opted to keep the position of the instrument list, with the now always-visible curated watchlists. On the
+            right of it I positioned the details of the selected field. For me, the 3 column
+            composition brings an understandable logical structure with rather easy navigation through the parent-child
+            elements. The user will be able to scroll each column separately. We noticed a small downside to the
+            structure, in which the user can lose context of the instrument they’re currently using. The solution was
+            the introduction of a scrolled state of the Instrument details.</p>
+        <figure class="figure">
+            <img class="images" src="images/standard-scrolled.png" alt="Scrolled state of the home screen">
+            <figcaption class="fig-caption">Scrolled state of the home screen</figcaption>
+        </figure>
+        <h4>Responsive design</h4>
+        <p class="note-strong">A whole lot of whitespace</p>
+        <p>The 3 column structure gave me freedom and simplicity in exploring the responsive breakpoints. The layout
+            pretty
+            much positioned itself around the screen, except for the sidebar. An interesting idea I wanted to try was
+            detaching the sidebar and bringing the Advanced charting & Chat with us stack closer to the main navigation
+            tabs, so that they don’t disappear at the bottom of the viewable area, with all the white space around them.
+            The
+            removal of the white background behind the sidebar lightened up the whole interface, in view to the
+            additional
+            screen estate.</p>
+        <figure class="figure">
+            <img class="images" src="images/responsive-2560.png" alt="Responsive view of the platform">
+            <figcaption class="fig-caption">Responsive view of the platform - 2560px</figcaption>
+        </figure>
+        <p class="note-strong">A whole NOT of whitespace</p>
+        <p>The minimal supported content width of the platform is 1000px, but that didn’t lead to any peculiar corner
+            cases. The UI scaled down rather effortlessly, firstly the margins between the different components were
+            going to be downsized to a minimum value, then the padding in the items and in some cases the typography
+            also needed a little nudge. I won’t go into much detail as the product is localized in 11 languages, there
+            are tons of corner cases concerning the typography and that is a whole ‘nother story…</p>
+        <figure class="figure">
+            <img class="images" src="images/responsive-1000.png" alt="Responsive view of the platform">
+            <figcaption class="fig-caption">Responsive view of the scrolled Home screen - 1000px</figcaption>
+        </figure>
+        <h4>2. Portfolio</h4>
+        <p>Maybe the most crucial part of the whole project. Here the users have a clear overview of their whole
+            portfolio. A historical performance graph, manual/recurring investments, funds allocation and so on. I
+            neatly stacked these components on the left, and when selected their detailed views appear on the right. In
+            the process of creating the new investment UI we created a Trading 212 Community forum and luckily several
+            of the most wanted features were overlapping with what we had in mind. With more than 10k daily active
+            users, the project put a lot of weight on my shoulders, and threads like that are very reassuring!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+        <div class="nav-items">
+            <a href="/" class="nav-logo">Dan Tsonkov</a>
+            <p class="footer-p">Made with love and wandering through Stack Overflow! 2020</p>
+            <a href="https://twitter.com/danthetsonkov" class="nav-links" rel="noopener" rel="noreferrer"
+                target="_blank">🐦 Twitter</a>
+            <a href="https://dribbble.com/dantsonkov" class="nav-links" rel="noopener" rel="noreferrer"
+                target="_blank">🏀 Dribbble</a>
+            <a href="https://www.linkedin.com/in/daniel-tsonkov/" class="nav-links" rel="noopener" rel="noreferrer"
+                target="_blank">👨‍💻 LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
