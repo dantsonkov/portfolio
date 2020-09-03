@@ -140,6 +140,7 @@ a.link-trading212:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  padding-left: 20px;
 }
 
 .nav-links:visited {
@@ -158,6 +159,7 @@ a.link-trading212:hover {
   font-size: 16px;
   line-height: 20px;
   margin-right: auto;
+  padding-left: 20px;
 }
 
 a.nav-logo:visited {
@@ -174,6 +176,11 @@ a.nav-logo:visited {
 .logo-works {
   display: block;
   max-height: 20px;
+}
+
+.logo-card {
+  display: block;
+  max-height: 16px;
 }
 
 .button {
@@ -408,4 +415,25 @@ a.button-back:hover {
   grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
   column-gap: 30px;
   grid-template-rows: auto;
+}
+
+.case-study-section {
+  margin-bottom: 40px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+  column-gap: 30px;
+  grid-template-rows: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: #fbf7f1;
+  background-image: linear-gradient(135deg, #fbf7f1 0%, #fcf5ec 74%);
+  padding: 30px 30px 40px 30px;
+  border-radius: 16px;
 }
