@@ -47,23 +47,30 @@
         <p class="note-strong">In this case study I will only be focusing on the 6 main tabs/pages, as I think that they
             show
             enough of the complexity and scale of the project, without being overbearing to the reader. 🙌</p>
-        <h4>Goals & challenges</h4>
-        <ul>
-            <li>Define a clear main structure of the platform and its most impactful sections/tabs</li>
-            <li>Salvage components that can be reused with no regards to the primary state of the trading platform, so
-                that we can ship a useful, viable product in the shortest time possible.</li>
-            <li>Create a clear & non-deceptive experience for users with a long term focus</li>
-            <li>Limelight hundreds of educational videos made by us to help our users</li>
-        </ul>
-        <h4>User Research Results</h4>
-        <ul>
-            <li>Users don’t tend to make sudden/rapid investments, but more planned and prefer thorough research before
-                committing to a specific portfolio/instrument.</li>
-            <li>Users find the CFD interface highly cluttered and busy for the purpose of investing</li>
-            <li>Many of our features are hard to find, and there is a steep learning curve with the UI</li>
-            <li>Dialogs from the CFD focused platform are clear and concise enough so that they can live in the new UI
-                and can be reused, cutting down implementation times.</li>
-        </ul>
+        <div class="case-study-section">
+            <h4>Goals & challenges</h4>
+            <ul>
+                <li>Define a clear main structure of the platform and its most impactful sections/tabs</li>
+                <li>Salvage components that can be reused with no regards to the primary state of the trading platform,
+                    so
+                    that we can ship a useful, viable product in the shortest time possible.</li>
+                <li>Create a clear & non-deceptive experience for users with a long term focus</li>
+                <li>Limelight hundreds of educational videos made by us to help our users</li>
+            </ul>
+        </div>
+        <div class="case-study-section">
+            <h4>User Research Results</h4>
+            <ul>
+                <li>Users don’t tend to make sudden/rapid investments, but more planned and prefer thorough research
+                    before
+                    committing to a specific portfolio/instrument.</li>
+                <li>Users find the CFD interface highly cluttered and busy for the purpose of investing</li>
+                <li>Many of our features are hard to find, and there is a steep learning curve with the UI</li>
+                <li>Dialogs from the CFD focused platform are clear and concise enough so that they can live in the new
+                    UI
+                    and can be reused, cutting down implementation times.</li>
+            </ul>
+        </div>
         <h4>1. Home</h4>
         <p>My main idea was keeping the UI as similar as possible to the old one since I didn’t want to introduce new
             complex mental models to the users. With that in mind, the platform needed a long-overdue visual update, so
@@ -86,7 +93,8 @@
             <figcaption class="fig-caption">Scrolled state of the home screen</figcaption>
         </figure>
         <h4>Responsive design</h4>
-        <p class="note-strong">A whole lot of whitespace</p>
+        <p class="p-strong">A whole lot of whitespace</p>
+        <br>
         <p>The 3 column structure gave me freedom and simplicity in exploring the responsive breakpoints. The layout
             pretty
             much positioned itself around the screen, except for the sidebar. An interesting idea I wanted to try was
@@ -100,7 +108,8 @@
             <img class="images" src="images/responsive-2560.png" alt="Responsive view of the platform">
             <figcaption class="fig-caption">Responsive view of the platform - 2560px</figcaption>
         </figure>
-        <p class="note-strong">A whole NOT of whitespace</p>
+        <p class="p-strong">A whole NOT of whitespace</p>
+        <br>
         <p>The minimal supported content width of the platform is 1000px, but that didn’t lead to any peculiar corner
             cases. The UI scaled down rather effortlessly, firstly the margins between the different components were
             going to be downsized to a minimum value, then the padding in the items and in some cases the typography
@@ -118,24 +127,128 @@
             of the most wanted features were overlapping with what we had in mind. With more than 10k daily active
             users, the project put a lot of weight on my shoulders, and threads like that are very reassuring!</p>
         <figure class="figure">
-            <img class="images" src="images/responsive-1000.png" alt="Responsive view of the platform">
-            <figcaption class="fig-caption">Responsive view of the scrolled Home screen - 1000px</figcaption>
+            <img class="images" src="images/portfolio-standard.png" alt="Historical performance graph selection">
+            <figcaption class="fig-caption">Historical performance graph selection</figcaption>
         </figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <figure class="figure">
+            <img class="images" src="images/portfolio-scrolled.png" alt="Scrolled state of the left column">
+            <figcaption class="fig-caption">Scrolled state of the left column</figcaption>
+        </figure>
+        <h4>3. Search</h4>
+        <p>Maybe the hardest part of the project was the Search tab, I underestimated the task and that was rather silly
+            from my side. I thought the whole thing is pretty straight forward, as the Search was a stand-alone
+            component, which we could have reused from the CFD project. Well not quite… The placement of the search bar
+            on the top navigation bar was strange, out of context and with the different main tab structure - rather
+            illogical.</p>
+        <br>
+        <p>I couldn’t answer several important questions:</p>
+        <ul>
+            <li>The search bar looked like a global search, not an instrument exploration tool.</li>
+            <li>How the user will know where/what he is searching?</li>
+            <li>What is going to be the desired behavior and state of the current page the users are at, when clicking
+                on the search field?</li>
+            <li>Should we save the current state of the page they are at, when the users have navigated to a specific
+                search result?</li>
+        </ul>
+        <p>That made me redo the whole idealization of the search and scrap the initial idea I had. Back to square one…
+            While designing the UI, the financial instruments our company offers have grown to more than 3000, that lead
+            to some changes and improvements on the search, so that users can find and navigate easily around it.</p>
+        <figure class="figure">
+            <img class="images" src="images/filters-old.png" alt="Initial direction for the instrument filters">
+            <figcaption class="fig-caption">Initial direction for the instrument filters</figcaption>
+        </figure>
+        <p>You can see in the screenshot above the initial direction I went with, but the interaction with the
+            components would have led to double or even triple scrollable areas, which as you can guess an awful thing.
+            The solution is shown in the following screens. The new version is better in several key areas:</p>
+        <ul>
+            <li>Larger items for finer filtration</li>
+            <li>Future proof of the country selection</li>
+            <ul>
+                <li>At the time of writing there are six possible countries, with the possibility of expanding to 30+ in
+                    the near future</li>
+                <li>Same applies with the addition of new stock exchanges</li>
+            </ul>
+            <li>The dark overlay is without blur to further visually enhance the experience and keep context for the
+                users. The items in the background will automatically adjust with the different filter selections.</li>
+        </ul>
+        <figure class="figure">
+            <img class="images" src="images/filter.png" alt="Filter instruments dialog">
+            <figcaption class="fig-caption">Filter instruments dialog</figcaption>
+        </figure>
+        <figure class="figure">
+            <img class="images" src="images/filter-country.png" alt="Filter instruments - by country">
+            <figcaption class="fig-caption">Filter instruments - by country</figcaption>
+        </figure>
+        <p>I reused a familiar component for the instrument details encasing it in a frame with a CTA at the top, which
+            gives the users the possibility to add the instrument to a specific watchlist, create a new watchlist with
+            the current selection.</p>
+        <figure class="figure">
+            <img class="images" src="images/instrument-details.png" alt="Instrument details view">
+            <figcaption class="fig-caption">Instrument details view</figcaption>
+        </figure>
+        <h4>4. Notifications</h4>
+        <p class="p-strong">The offbeat</p>
+        <br>
+        <p>For the first iteration of the platform we decided to keep the notifications simple, yet useful. As you can
+            see in the screenshot bellow, the notifications flyout is the offbeat of the 6 main tabs in its’ structure.
+            The reasoning behind this is very simple:</p>
+        <ul>
+            <li>We don’t need so much space to view rather simple notifications</li>
+            <li>There is no need for context switching, to quickly preview a new notification</li>
+        </ul>
+        <p>With that being said I tried to future proof my concept, as for version 2 we want to add deep links so that
+            when clicking on a specific message the user will be lead to the said component.</p>
+        <p class="p-strong">A short example will be:</p>
+        <p>When the user receives a price alert notification for Tesla, and clicks on it, they will be redirected to the
+            Home page with the instrument Tesla being selected.</p>
+        <figure class="figure">
+            <img class="images" src="images/notifications.png" alt="Notifications flyout">
+            <figcaption class="fig-caption">Notifications flyout</figcaption>
+        </figure>
+        <h4>5. Videos</h4>
+        <p class="p-strong">Untapped potential</p>
+        <br>
+        <p>For some strange reason we didn’t emphasize on our YouTube channel (~400k subscribers). Thousands of people
+            watched our educational videos daily, but we didn’t actively promote them to the most important people - our
+            users… For that reason I created a main page only dedicated to them. On the left we have all of our
+            playlists directly curated from our YouTube channel and on the right chronologically ordered videos.</p>
+        <br>
+        <p class="p-strong">N.B</p>
+        <p class="p-strong">There is lots of room for improvement, but for non-crucial features, we had to make some
+            compromises. </p>
+        <figure class="figure">
+            <img class="images" src="images/videos.png" alt="Videos playlist">
+            <figcaption class="fig-caption">Overview of the “Weekly Trading Vlogs” playlist</figcaption>
+        </figure>
+        <h4>6. Economic calendar</h4>
+        <p>The economics calendar is another feature we made to help out our users. Without forgetting the fact that the
+            main purpose of the platform is to offer the ability to trade stocks, we wanted to make a convenient feature
+            for our customers to see the latest economics news and react appropriately to major economic events. For the
+            first iteration I kept things simple and straightforward. Only basic filters would be done - By currency &
+            by impact. The whole feature revolved around the idea of visualizing an external feed from a reputable news
+            provider, so that our customers have a stellar experience with detailed and authentic information.</p>
+        <figure class="figure">
+            <img class="images" src="images/calendar.png" alt="Economic event details">
+            <figcaption class="fig-caption">Economic event details</figcaption>
+        </figure>
+        <!-- <div class="img-row"> -->
+            <figure class="figure-small">
+                <img class="images-s" src="images/no-events.png" alt="No events matching your criteria">
+                <figcaption class="fig-caption">No events matching your criteria” playlist</figcaption>
+            </figure>
+            <figure class="figure-small">
+                <img class="images-s" src="images/calendar-dropdown.png" alt="Calendar dropdown">
+                <figcaption class="fig-caption">Calendar dropdown” playlist</figcaption>
+            </figure>
+            <figure class="figure-small">
+                <img class="images-s" src="images/calendar-filter.png" alt="Event filtration">
+                <figcaption class="fig-caption">Event filtration</figcaption>
+            </figure>
+        <!-- </div> -->
+        <h4>You’ve made it through! Thank you for the time spent reading this case study! 🍻</h4>
     </div>
+
+    
     <footer>
         <div class="nav-items">
             <a href="/" class="nav-logo">Dan Tsonkov</a>

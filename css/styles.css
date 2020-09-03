@@ -47,7 +47,7 @@ p {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   margin: 0;
 }
 
@@ -60,10 +60,6 @@ li {
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 800px;
-}
-
-ul {
-  margin-bottom: 40px;
 }
 
 .container {
@@ -357,12 +353,28 @@ a.button-back:hover {
   box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.13);
 }
 
+.images-s {
+  display: block;
+  margin: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.13);
+  box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.13);
+}
+
 .figure {
   display: block;
   margin-bottom: 40px;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.figure-small {
+  float:left;
+  width: 33.33%;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .fig-caption {
@@ -380,4 +392,23 @@ a.button-back:hover {
   line-height: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.case-study-section {
+  margin-bottom: 40px;
+  margin
+}
+
+.p-strong {
+  color: #383e41;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+.img-row {
+  margin-left: auto;
+  margin-right: auto;
 }
