@@ -30,7 +30,7 @@ h3 {
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -39,7 +39,6 @@ h4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 10px;
 }
 
 p {
@@ -313,9 +312,18 @@ a.nav-logo:visited {
   margin-bottom: 40px;
 }
 
-.intro-invest {
+.intro-orange {
   display: block;
   background-color: #ff903b;
+  height: 250px;
+  background-size: auto 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.intro-blue {
+  display: block;
+  background-color: #00a7e1;
   height: 250px;
   background-size: auto 100%;
   margin-top: 40px;
@@ -434,4 +442,9 @@ a.button-back:hover {
   background-image: linear-gradient(135deg, #fbf7f1 0%, #fcf5ec 74%);
   padding: 30px 30px 40px 30px;
   border-radius: 16px;
+}
+
+.p-spacing {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
