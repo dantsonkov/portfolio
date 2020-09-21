@@ -445,3 +445,13 @@ a.button-back:hover {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.prototype {
+  display: block;
+}
+
+.wrapped-iframe {
+  /* object-position: 50% 50%;
+  border: 0;
+  object-fit: scale-down; */
+}
