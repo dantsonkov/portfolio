@@ -446,14 +446,17 @@ a.button-back:hover {
   margin-bottom: 20px;
 }
 
+
+/* Responsive */
+
+/* Mobile */
+
 @media only screen and (max-width: 430px) {
-    /* @media (hover: none) and (pointer: coarse) {
-    a.link-payhawk {
-      color: #fa784c;
-      }
-    } */
+  .container {
+    padding: 0px 30px 0px 30px;
+  }
   h1 {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 38px;
   }
 
@@ -461,7 +464,38 @@ a.button-back:hover {
     font-size: 24px;
     line-height: 30px;
   }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .p-strong{
+    font-size: 16px;
+  }
+
+  .note-strong{
+    font-size: 16px;
+  }
+
+  .cards {
+    grid-template-columns: none;
+    display: block;
+  }
+
+  .project-card {
+    margin-bottom: 40px;
+    border-radius: 8px;
+  }
 }
+
+
+/* Tablet */
 
 @media only screen and (min-width: 431px) and (max-width: 768px) {
   h1 {
@@ -472,5 +506,43 @@ a.button-back:hover {
   h2 {
     font-size: 32px;
     line-height: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .nav-items {
+    align-items: center;
+
+  }
+
+  .nav-links {
+    min-width: fit-content;
+  }
+
+  .mockups {
+    margin-left: 40%;
+  }
+  .work-description {
+    max-width: 260px;
+  }
+
+  .img-row {
+    grid-template-columns: none;
+  }
+
+  .images-s {
+    max-height: fit-content;
+  }
+
+  .contacts {
+    height: 14vh;
   }
 }
