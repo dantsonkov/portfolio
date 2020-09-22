@@ -497,6 +497,9 @@ a.button-back:hover {
   .img-row {
     grid-template-columns: none;
   }
+  .intro-blue, .intro-orange {
+    height: 150px;
+  }
 }
 
 
@@ -549,5 +552,9 @@ a.button-back:hover {
 
   .contacts {
     height: 14vh;
+  }
+
+  .intro-blue, .intro-orange {
+    height: 200px;
   }
 }
