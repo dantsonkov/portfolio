@@ -493,6 +493,10 @@ a.button-back:hover {
     margin-bottom: 40px;
     border-radius: 8px;
   }
+
+  .img-row {
+    grid-template-columns: none;
+  }
 }
 
 
