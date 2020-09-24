@@ -516,7 +516,7 @@ a.button-back:hover {
   .img-row {
     grid-template-columns: none;
   }
-  .intro-blue, .intro-orange {
+  .intro-blue, .intro-orange, .intro {
     height: 150px;
   }
 
@@ -551,6 +551,8 @@ a.button-back:hover {
     max-height: none;
     height: auto;
     padding-top: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .mockups{
@@ -631,7 +633,7 @@ a.button-back:hover {
     height: 14vh;
   }
 
-  .intro-blue, .intro-orange {
+  .intro-blue, .intro-orange, .intro {
     height: 200px;
   }
 
