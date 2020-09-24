@@ -208,7 +208,7 @@ a.nav-logo:visited {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 48px;
   border-radius: 8px;
   color: #ffffff;
   text-decoration: none;
@@ -230,7 +230,7 @@ a.nav-logo:visited {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 48px;
   border-radius: 8px;
   color: #383e41;
   text-decoration: none;
@@ -447,10 +447,9 @@ a.button-back:hover {
 
 .cards {
   width: 100%;
-  display: flex;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
-  column-gap: 30px;
-  grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
   margin-top: 30px;
   margin-bottom: 40px;
 }
@@ -544,6 +543,39 @@ a.button-back:hover {
     margin-left: 0;
   }
 
+  .work-description {
+    margin: 0;
+  }
+
+  .list-item{
+    max-height: none;
+    height: auto;
+    padding-top: 16px;
+  }
+
+  .mockups{
+    position: relative;
+    margin: 0;
+    height: auto;
+    width: 100%;
+
+  }
+
+  .work-description{
+    padding: 30px;
+  }
+
+  .buttons-works {
+    margin-top: 24px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    margin-bottom: 30px;
+  }
 
 }
 
