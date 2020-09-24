@@ -123,7 +123,27 @@ a.link-trading212:hover {
   justify-content: space-between;
 }
 
+.footer-items {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 40px;
+  padding: 10px 20px 10px 20px;
+  justify-content: space-between;
+}
+
 .nav-links {
+  text-decoration: none;
+  margin-left: 32px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383e41;
+}
+
+.social-links {
   text-decoration: none;
   margin-left: 32px;
   font-family: "IBM Plex Sans", sans-serif;
@@ -500,6 +520,31 @@ a.button-back:hover {
   .intro-blue, .intro-orange {
     height: 150px;
   }
+
+  .footer-items {
+    flex-direction: column;
+    
+  }
+
+  .nav-logo {
+    margin-bottom: 16px;
+  }
+
+  .footer-p {
+    padding-left: 0;
+    margin-bottom: 16px;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-links{
+    margin-left: 0;
+  }
+
+
 }
 
 
@@ -556,5 +601,13 @@ a.button-back:hover {
 
   .intro-blue, .intro-orange {
     height: 200px;
+  }
+
+  .footer-p {
+    width: 35%;
+  }
+
+  .socials {
+    display: flex;
   }
 }
