@@ -187,7 +187,7 @@ a.nav-logo:visited {
 .work-description {
   margin-left: 40px;
   margin-top: 48px;
-  max-width: 310px;
+  max-width: 33%;
   display: inline-block;
 }
 
@@ -545,6 +545,7 @@ a.button-back:hover {
 
   .work-description {
     margin: 0;
+    max-width: 100%;
   }
 
   .list-item{
@@ -558,7 +559,6 @@ a.button-back:hover {
   .mockups{
     position: relative;
     margin: 0;
-    height: auto;
     width: 100%;
 
   }
@@ -612,6 +612,10 @@ a.button-back:hover {
 
   .nav-links {
     min-width: fit-content;
+  }
+
+  .list-item{
+    max-height: none;
   }
 
   .mockups {
