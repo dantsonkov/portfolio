@@ -77,11 +77,12 @@ li {
 }
 
 .link-payhawk,
-.link-trading212 {
+.link-trading212,
+.link-vmware {
   text-decoration: none;
 }
 
-a.link-payhawk, .link-trading212{
+a.link-payhawk, .link-trading212, .link-vmware{
   color: #747980;
 }
 
@@ -95,6 +96,14 @@ a.link-payhawk:hover {
 
 a.link-trading212:visited {
   color: #747980;
+}
+
+a.link-vmware:visited {
+  color: #747980;
+}
+
+a.link-vmware:hover {
+  color: #1d428a;
 }
 
 a.link-trading212:hover {
